@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bsb_bottom_sheet_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#3c3f41"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+    <TextView
+        android:id="@+id/tv_author_header"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="aaaaaa"
+        android:textAlignment="center"
+        android:textColor="#e860e32c"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_author_name"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_author_header"
+        android:layout_centerHorizontal="true"
+        android:text="bbbbbbbbbb"
+        android:textAlignment="center"
+        android:textColor="#e860e32c"
+        android:textSize="20sp" />
+
+    <FrameLayout
+        android:id="@+id/fl_image_layout"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp">
+
+        <ImageView
+            android:id="@+id/iv_facebook"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="start"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="facebook"
+            android:onClick="onClick_Facebook" />
+
+        <ImageView
+            android:id="@+id/iv_twitter"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="twitter"
+            android:onClick="onClick_Twitter" />
+
+        <ImageView
+            android:id="@+id/iv_mail"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="end"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="mail"
+            android:onClick="onClick_Mail" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fl_image_layout">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_more_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:textSize="25sp" />
+        </android.support.v4.widget.NestedScrollView>
+    </RelativeLayout>
+</RelativeLayout>

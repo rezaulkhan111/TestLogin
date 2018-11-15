@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityPackage.CheckBox.CheckBoxActivity">
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rg_android_phone"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/rg_android_phone"
+        android:layout_marginTop="13dp"
+        android:text="Box 1" />
+
+    <RadioGroup
+        android:id="@+id/rg_android_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="79dp">
+
+        <RadioButton
+            android:id="@+id/rb_samsung"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Samsung" />
+
+        <RadioButton
+            android:id="@+id/rb_huawei"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Huawei" />
+
+        <RadioButton
+            android:id="@+id/symphony"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Symphony" />
+    </RadioGroup>
+
+    <com.google.android.material.chip.Chip
+
+        style="@style/Widget.MaterialComponents.Chip.Entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/checkBox1"
+        android:layout_marginBottom="213dp"
+        android:text="Hello World"
+        tools:ignore="InvalidId" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="58dp"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="19dp"
+        android:layout_marginEnd="18dp"
+        android:background="@color/colorAccent"
+        android:clickable="true"
+        android:textAlignment="center"
+        android:tooltipText="demo text"
+        app:srcCompat="@drawable/ic_action_name_white"
+        tools:ignore="RtlCompat" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox1"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/checkBox1"
+        android:layout_marginTop="194dp"
+        android:text="ToggleButton" />
+
+    <Button
+        android:id="@+id/btn_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/toggleButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="showTimePickerDialog"
+        android:text="Time" />
+</RelativeLayout>
