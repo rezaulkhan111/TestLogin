@@ -1,32 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerID"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior">
-    <!--tools:context=".ActivityPackage.BottomSheet.BottomSheetActivity">-->
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ActivityPackage.NavigationDrawer.NavigationActivity">
 
-    <!--<Button-->
-    <!--android:id="@+id/btn_bottom_sheet"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_gravity="center_horizontal"-->
-    <!--android:text="Show Bottom Sheet" />-->
 
-    <!--<Button-->
-    <!--android:id="@+id/btn_bottom_sheet_dialog"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_gravity="center_horizontal"-->
-    <!--android:text="Show Bottom Sheet Dialog" />-->
+</RelativeLayout>
 
-    <!--<Button-->
-    <!--android:id="@+id/btn_bottom_sheet_dialog_fragment"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:layout_gravity="center_horizontal"-->
-    <!--android:text="Show Bottom Sheet Dialog Fragment" />-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:orientation="vertical"--><!--app:layout_behavior="@string/appbar_scrolling_view_behavior">--><!--&lt;!&ndash;tools:context=".ActivityPackage.BottomSheet.BottomSheetActivity">&ndash;&gt;-->
 
-</LinearLayout>
+    <!--&lt;!&ndash;<Button&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/btn_bottom_sheet"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:layout_gravity="center_horizontal"&ndash;&gt;--><!--&lt;!&ndash;android:text="Show Bottom Sheet" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<Button&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/btn_bottom_sheet_dialog"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:layout_gravity="center_horizontal"&ndash;&gt;--><!--&lt;!&ndash;android:text="Show Bottom Sheet Dialog" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<Button&ndash;&gt;--><!--&lt;!&ndash;android:id="@+id/btn_bottom_sheet_dialog_fragment"&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;--><!--&lt;!&ndash;android:layout_gravity="center_horizontal"&ndash;&gt;--><!--&lt;!&ndash;android:text="Show Bottom Sheet Dialog Fragment" />&ndash;&gt;-->
+
+    <!--</LinearLayout>-->

@@ -18,6 +18,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     Context c;
     ArrayList<String> spacecrafts;
 
+    public MyAdapter(Context c, ArrayList<String> spacecrafts) {
+        this.c = c;
+        this.spacecrafts = spacecrafts;
+    }
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
