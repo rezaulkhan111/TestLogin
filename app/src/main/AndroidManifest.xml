@@ -21,10 +21,11 @@
         </activity>
         <activity
             android:name=".ActivityPackage.NavigationDrawer.NavigationActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:theme="@style/NoActionBarTheme"
             tools:ignore="InnerclassSeparator" />
         <activity
             android:name=".ActivityPackage.BottomSheet.BottomSheetActivity"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
             tools:ignore="InnerclassSeparator" />
         <activity
             android:name=".ActivityPackage.Dialog.DialogActivity"
@@ -37,6 +38,7 @@
             tools:ignore="InnerclassSeparator" />
         <activity
             android:name=".ActivityPackage.BottomNavigation.BottomNavigationActivity"
+            android:theme="@style/Theme.AppCompat"
             tools:ignore="InnerclassSeparator" />
         <activity
             android:name=".ActivityPackage.Calendar.CalendarActivity"
